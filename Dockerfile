@@ -3,7 +3,7 @@ FROM alpine:latest
 MAINTAINER JG <ts@ambiweb.de>
 
 RUN apk add --no-cache \
-    curl \
+    curl
 
 ENV VERSION 0.40.3
 RUN mkdir -p /usr/local/src \
