@@ -1,9 +1,9 @@
 FROM alpine:latest
 
-MAINTAINER JG <ts@ambiweb.de>
+MAINTAINER TS <ts@ambiweb.de>
 
 RUN apk add --no-cache \
-    curl
+    curl \
     tar
 
 ENV VERSION 0.47
