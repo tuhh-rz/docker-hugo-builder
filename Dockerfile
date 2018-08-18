@@ -13,7 +13,7 @@ ADD https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/${HUGO_I
 RUN tar -xf /tmp/${HUGO_ID}_Linux-64bit.tar.gz -C /tmp \
     && mv /tmp/hugo /usr/local/bin/hugo \
     && addgroup -Sg 1000 hugo \
-    && adduser -SG hugo -u 1000 -h /src hugo \    
+    && adduser -SG hugo -u 1000 -h /src hugo \
     && rm -rf /tmp/${HUGO_ID}_linux_amd64 \
     && rm -rf /tmp/${HUGO_ID}_Linux-64bit.tar.gz \
     && rm -rf /tmp/LICENSE.md \
