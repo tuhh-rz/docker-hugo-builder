@@ -1,4 +1,4 @@
-FROM busybox:1.29.2-glibc
+FROM busybox:1.29.2
 
 MAINTAINER TS <ts@ambiweb.de>
 
