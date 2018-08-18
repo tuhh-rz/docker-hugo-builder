@@ -4,6 +4,7 @@ MAINTAINER JG <ts@ambiweb.de>
 
 RUN apk add --no-cache \
     curl
+    tar
 
 ENV VERSION 0.47
 RUN mkdir -p /usr/local/src \
