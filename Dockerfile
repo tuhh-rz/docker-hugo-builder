@@ -8,7 +8,8 @@ ENV VERSION 0.47
 
 ADD https://github.com/gohugoio/hugo/releases/download/v${VERSION}/hugo_extended_${VERSION}_Linux-64bit.tar.gz /tmp
     
-RUN tar -xfz /tmp/hugo_extended_${VERSION}_Linux-64bit.tar.gz -C /tmp \
+RUN cd /tmp \
+    && tar -xfz hugo_extended_${VERSION}_Linux-64bit.tar.gz \
     && mv hugo /usr/local/bin/hugo \
     && addgroup -Sg 1000 hugo \
     && adduser -SG hugo -u 1000 -h /src hugo \
