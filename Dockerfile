@@ -33,8 +33,8 @@ RUN tar -xf /tmp/${HUGO_ID}_Linux-64bit.tar.gz -C /tmp \
     && adduser -SG hugo -u 1000 -h /src hugo \
     && rm -rf /tmp/${HUGO_ID}_Linux-64bit.tar.gz \
     && rm -rf /tmp/LICENSE.md \
-    && rm -rf /tmp/README.md
-	&& apk del wget ca-certificates \
+    && rm -rf /tmp/README.md \
+    && apk del wget ca-certificates \
     && rm /var/cache/apk/*
 
 WORKDIR /src
