@@ -5,7 +5,7 @@ MAINTAINER JG <ts@ambiweb.de>
 RUN apk add --no-cache \
     curl
 
-ENV VERSION 0.46
+ENV VERSION 0.47
 RUN mkdir -p /usr/local/src \
     && cd /usr/local/src \
     && curl -l https://github.com/gohugoio/hugo/releases/download/v${VERSION}/hugo_extended_${VERSION}_Linux-64bit.tar.gz | tar -xz \
