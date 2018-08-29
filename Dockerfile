@@ -4,6 +4,8 @@ MAINTAINER TS <ts@ambiweb.de>
 
 ENV HUGO_VERSION=0.48
 
+RUN apt-get update && apt-get install -y git
+
 ADD https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz /tmp
 
 RUN tar -xf /tmp/hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz -C /tmp \
