@@ -2,7 +2,7 @@ FROM debian:stable-slim
 
 MAINTAINER TS <ts@ambiweb.de>
 
-ENV HUGO_VERSION=0.55.4
+ENV HUGO_VERSION=0.55.5
 
 RUN apt-get update && apt-get install -y git lftp
 
