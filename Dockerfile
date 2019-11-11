@@ -2,7 +2,7 @@ FROM debian:stable-slim
 
 MAINTAINER TS <ts@ambiweb.de>
 
-ENV HUGO_VERSION=0.57.2
+ENV HUGO_VERSION=0.59.1
 
 RUN apt-get update && apt-get install -y git lftp jpegoptim optipng
 
