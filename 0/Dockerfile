@@ -17,8 +17,11 @@ RUN apt-get update && \
 RUN apt-get install -qy \
     lftp \
     jpegoptim \
-    optipng \
-    openssh \
+    optipng
+
+# Hilfreich waehrend der Nutzung des Containers
+RUN apt-get install -qy \
+    openssh-client \
     wget
 
 RUN wget "${DOWNLOAD}" -O /tmp/download.deb
