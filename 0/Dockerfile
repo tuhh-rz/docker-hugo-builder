@@ -8,7 +8,7 @@ ARG DOWNLOAD=${DOWNLOAD}
 ENV DOWNLOAD=$DOWNLOAD
 RUN echo $DOWNLOAD
 
-RUN apt-get update && apt-get upgrade
+RUN apt-get update -y && apt-get upgrade -y
 RUN apt-get install -y \
     lftp \
     jpegoptim \
