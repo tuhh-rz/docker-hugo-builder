@@ -18,6 +18,7 @@ RUN apt-get install -qy \
     lftp \
     jpegoptim \
     optipng \
+    openssh \
     wget
 
 RUN wget "${DOWNLOAD}" -O /tmp/download.deb
