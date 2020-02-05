@@ -25,4 +25,4 @@ RUN dpkg -i /tmp/download.deb && rm /tmp/download.deb
 
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-RUN hugo --version
+RUN hugo version
