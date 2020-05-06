@@ -3,6 +3,7 @@
     "version-check": {
         "active": true,
         "master_key": "Hugo",
+        "sub_key": "Hugo",
         "version_digits_in_key": 1
     },
 
