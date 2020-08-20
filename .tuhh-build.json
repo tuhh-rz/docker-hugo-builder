@@ -1,24 +1,27 @@
 {
+  "active": true,
+  "version-check": {
     "active": true,
-    "version-check": {
-        "active": true,
-        "master_key": "Hugo",
-        "sub_key": "Hugo",
-        "version_digits_in_key": 1
+    "master_key": "Hugo",
+    "sub_key": "Hugo",
+    "version_digits_in_key": 1
+  },
+  "registries": [
+    {
+      "name": "collaborating.tuhh.de:5005",
+      "state": "ignore"
     },
-
-    "registries": [{
-            "name": "collaborating.tuhh.de:5005",
-            "state": "ignore"
-        },
-        {
-            "name": "docker.rz.tu-harburg.de:5000",
-            "state": "present"
-        }
-    ],
-    "image-tags": {
-        "0": {
-            "action": "build"
-        }
+    {
+      "name": "docker.rz.tu-harburg.de:5000",
+      "state": "present"
     }
+  ],
+  "image-tags": {
+    "0": {
+      "action": "build"
+    }
+  },
+  "upgrade-check": {
+    "active": true
+  }
 }
